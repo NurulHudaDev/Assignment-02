@@ -7,10 +7,10 @@ body{
 /*-------------------- 
     header styles 
 ---------------------*/
-main{
+.banner{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 .container{
     width: 80%;
@@ -37,6 +37,7 @@ button{
     padding: 10px 20px;
     border-radius: 20px;
     align-items: center;
+    border: none;
 }
 .fa-arrow-right{
     margin-left: 10px;
@@ -55,6 +56,11 @@ button:hover{
 /*-------------------------- 
     popular collection 
 ---------------------------*/
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .collections-titel{
     font-size: 32px;
     align-items: center;
@@ -169,7 +175,7 @@ button:hover{
 /*-------------------- 
     media query 
 ----------------------*/
-@media only screen and (max-width:700px){
+@media only screen and (max-width: 688px){
     .container{
         width: 100%;
     }
@@ -191,28 +197,23 @@ button:hover{
         margin-top: 50px;
     }
     .collections{
-        justify-content: space-around;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .collection{
-        flex-direction: column;
-        
+        justify-content: space-around;
     }
     .row{
-        flex-direction: column;
-        text-align: center;
+        display: block;
         justify-content: space-around;
-        grid-row-gap: 30px;
     }
     .testimonial-col{
-        width: 80%;
+        width: 250px;
         display: block;
+        margin-top: 30px;
     }
 }
-/* tablet debices */
-@media only screen and (min-width:688px) and (max-width:992px){
+@media only screen and (min-width: 688px) and (max-width: 992px){
     .collections{
-        justify-content: space-around;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
     }
 }
+ 
