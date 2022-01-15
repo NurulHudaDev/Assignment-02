@@ -14,10 +14,11 @@ body{
 }
 .container{
     width: 80%;
-    margin-top: 87px;
+    margin-top: 60px;
 }
 .company-titel{
     font-size: 24px;
+    margin-bottom: 55px;
 }
 .header{
     display: flex;
@@ -38,6 +39,7 @@ button{
     border-radius: 20px;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
 .fa-arrow-right{
     margin-left: 10px;
@@ -114,6 +116,7 @@ main{
     color: #E02C6D;
     font-size: 16px;
     margin-top: 50px;
+    cursor: pointer;
 }
 /*---------------- 
     testimonials 
@@ -171,10 +174,12 @@ main{
 }
 .social{
     margin-left: 25px;
+    cursor: pointer;
 }
 /*-------------------- 
     media query 
 ----------------------*/
+/* mobile devices */
 @media only screen and (max-width: 688px){
     .container{
         width: 100%;
@@ -210,10 +215,16 @@ main{
         margin-top: 30px;
     }
 }
+/* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px){
     .collections{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 688px) and (max-width: 988px){
+    .collections{
+        grid-column-gap: 30px;
     }
 }
  
