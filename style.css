@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+/*------------------ 
+    header styles 
+-------------------*/
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 80%;
+    margin-top: 87px;
+}
+.company-name h6{
+    font-size: 24px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titel{
+    font-size: 52px;
+}
+p{
+    font-size: 20px;
+}
+button{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+button:hover{
+    background-color: #fa3980;
+}
+.image img{
+    width: 440px;
+    height: 414px;
+}
+.image img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+/*-------------------------- 
+    popular collection 
+---------------------------*/
+.collections-titel{
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 41px;
+    margin-top: 60px;
+}
+.collection{
+    background-color: #FFFFFF;
+    width: 301px;
+    height: 501px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+.collection:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.collection-titel{
+    font-size: 28px;
+}
+.price{
+    font-size: 24px;
+    font-weight: normal;
+}
+.reting{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 8px;
+    color: #FB8200;
+}
+.model{
+    font-size: 14px;
+    color: #5E6366;
+    margin-left: 10px;
+}
+.text{
+    font-size: 20px;
+    color: #787885;
+    margin-top: 0;
+}
+.arrow-right{
+    float: right;
+    margin-right: 63px;
+    color: #E02C6D;
+    font-size: 16px;
+    margin-top: 50px;
+}
+/*---------------- 
+    testimonials 
+------------------*/
+.testimonials-titel{
+    font-size: 32px;
+    text-align: center;
+}
+.testimonials-text{
+    font-size: 18px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    margin-top: 80px;
+}
+.testimonial-col{
+    background-color: #FFFFFF;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.testimonial-col:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.testimonial-col img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/*------------------- 
+    footer styles 
+---------------------*/
+.footer-info{
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+.footer-titel{
+    font-size: 24px;
+}
+.footer-text{
+    font-size: 16px;
+    font-weight: normal;
+}
+.social-icin{
+    margin-top: 25px;
+}
+.social{
+    margin-left: 25px;
+}
+/*-------------------- 
+    media query 
+----------------------*/
+@media only screen and (max-width:688px){
+    main{
+        width: 100%;
+    }
+    .company-name h6{
+        text-align: center;
+        font-size: 25px;
+    }
+    .collections{
+        margin: auto;
+    }
+    .header-ariya{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        
+    }
+    .header{
+        display: block;
+    }
+    .titel{
+        font-size: 24px;
+    }
+    .image img{
+        width: 250px;
+        height: 240px;
+        margin-top: 50px;
+    }
+    .collections-titel{
+        font-size: 24px;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .testimonial-col{
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        
+    }
+}
+/* tablet debices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    main{
+        width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    .testimonial-col{
+        display: block;
+    }
+}
